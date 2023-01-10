@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > h1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+#subtitle{
+    text-align: center;
+    letter-spacing: 12px;
+}
+
+.buffer{
+    height: 7rem;
+    width: 100%;
+}
+
+.question{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    padding-right: 5.3em;
+    padding-bottom: 1em;
+}
+
+.todo-input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.todo-input > input{
+    height: 2.5em;
+    width: 30em;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+}
+.todo-input > input:only-of-type{
+    padding:20px;
+}
+
+.todo-input > button{
+    width: 7em;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    background-color: #585858;
+    color:#fff;
+    transition:0.2s all ease-in-out;
+}
+
+.todo-input > button:hover{
+    cursor: pointer;
+    border: 0;
+    transform: scale(1.2);
+    background-color: #8a8a8a;
+}
+
+
+.todo-output{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 3em;
+    place-content: center;
+}
+
+.todo-output > ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 1200px){
+    .todo-output > ul{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+ul  li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 20vw 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+li > button{
+    color: red;
+    text-decoration: solid;
+    font-weight: 700;
+    border: 0; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px 19px 15px 19px;
+    transition:0.2s all ease-in-out;
+}
+
+li > button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #9e3c3c;
+}
+
+.unsee{
+    display:block;
+    visibility:hidden;
+}
+
+
+.done{
+	background-color: #0bb652;
+    border: 1px solid #585858;
+}
+
+
+#remove-all-btn{
+    display: none;
+    width: 7em;
+    height: 42px;
+    border: 1px solid #2f2f2f;
+    border-radius: 10px;
+    background-color: #7c2121;
+    color:#fff;
+    transition:0.2s all ease-in-out;
+}
+
+#remove-all-btn:hover{
+    cursor: pointer;
+    border: 0;
+    transform: scale(1.2);
+    background-color: #ff0000;
+}

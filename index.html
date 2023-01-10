@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TO DO:</h1>
+        <p id="subtitle">your very personal todo list</p>
+    </header>
+    <div class="buffer">
+
+    </div>
+
+    <p class="question">What do you have To Do today?</p>
+    <div class="todo-input">
+        <input id="todo-add" type="text" placeholder="Type your task!" maxlength="50">
+        <button id="btn-add">Add Task</button>
+        <button id="remove-all-btn">Clear All</button>
+    </div>
+
+    <div class="todo-output" id="todo-id">
+        <ul>
+            <li id="queue"> Your task here...</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
